@@ -1,0 +1,21 @@
+plugins {
+	id 'org.springframework.boot' version '2.1.6.RELEASE'
+	id 'java'
+	id 'eclipse'
+}
+
+apply plugin: 'io.spring.dependency-management'
+
+group = 'com.j4g.cloud'
+version = ''
+sourceCompatibility = '1.8'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	compile group: 'com.cloudant', name: 'cloudant-client', version: '2.9.0'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
