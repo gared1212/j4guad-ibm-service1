@@ -3,6 +3,7 @@ applications:
 - name: contact-service-j4g
   memory: 256M
   path: build/libs/service1.jar
+  instances: 2
   timeout: 60
   env:
     CONTACT_SUPPORT: https://mx.linkedin.com/in/orlandocano
