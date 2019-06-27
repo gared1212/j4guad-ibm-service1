@@ -9,14 +9,14 @@ import com.fasterxml.jackson.databind.node.JsonNodeFactory;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 
 @RestController
-@RequestMapping("/version")
-public class APIVersionResource {
+@RequestMapping("/support/contact")
+public class SupportContactResource {
 	
-	@GetMapping( produces = "application/json")
+	@GetMapping(produces = "application/json")
 	public ObjectNode getAPIVersion() {
 		ObjectNode version = JsonNodeFactory.instance.objectNode();
-		version.put("version", "1.22.33");
-		return version;      
+		version.put("contactLinkedin", "https://www.linkedin.com/in/orlandocano/");
+		return version;
 	}
 
 }

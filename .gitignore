@@ -1,0 +1,11 @@
+.gradle
+/build/
+!gradle-wrapper.jar
+gradle-app.setting
+*.jar
+*.war
+*.ear
+.settings/
+.classpath
+.project
+/bin/
